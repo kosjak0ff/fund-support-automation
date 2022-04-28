@@ -101,14 +101,14 @@ dvs_supported_chains () {
             RECOMMENDED_MIN_COMMISSION_TO_WITHDRAW="5000000"
             CHAIN_DENOM="uatolo"
             return
-        ;;
+            ;;
         uptickd)
             DVS_FOUNDATION_ADDRESS="uptick1yfdf3tpt9xqkk7rjlwdmk0mk8j7pm8t7re96fj"
             RECOMMENDED_FEE="20"
             RECOMMENDED_MIN_COMMISSION_TO_WITHDRAW="5000000"
             CHAIN_DENOM="auptick"
             return
-        ;;
+            ;;
     esac
 
     echo -e "${RED}ERROR!${NC} This chain is not supported ($NODE_SERVICE)."
