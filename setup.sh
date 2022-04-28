@@ -95,6 +95,13 @@ dvs_supported_chains () {
             CHAIN_DENOM="uiov"
             return
             ;;
+        rizond)
+            DVS_FOUNDATION_ADDRESS="rizon1zwhe4spa89607wuvh494pc8kteu60ylr6l76j7"
+            RECOMMENDED_FEE="20"
+            RECOMMENDED_MIN_COMMISSION_TO_WITHDRAW="5000000"
+            CHAIN_DENOM="uatolo"
+            return
+        ;;
     esac
 
     echo -e "${RED}ERROR!${NC} This chain is not supported ($NODE_SERVICE)."
